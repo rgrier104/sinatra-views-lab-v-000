@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>Today</h1>
-        <% @today = Date.today %>
+        <% @today = Date.today.strftime("%A") %>
         <p><%="The date is " + @today %></p>
     </body>
 </html>
